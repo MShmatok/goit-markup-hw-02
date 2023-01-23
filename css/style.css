@@ -1,13 +1,15 @@
-/* Colors txt */
 :root {
-  /* Colors txt */
+  /*  TXT color */
   --primary-txt-cl: #2e2f42;
   --secondary-txt-cl: #434455;
   --light-txt-cl: #ffffff;
-  --logo-darck-cl: #4d5ae5;
-  --logo-light-cl: #f4f4fd;
   --pressed-txt-cl: #404bbf;
   --footer-txt-cl: #e7e9fc;
+  --btn-filter-txt-cl: #4d5ae5;
+
+  /* Logo color */
+  --logo-darck-cl: #4d5ae5;
+  --logo-light-cl: #f4f4fd;
 
   /* Colors bg */
   --primary-bg-cl: #ffffff;
@@ -20,8 +22,8 @@
   --primary-font: Roboto;
   --secondary-font: Raleway;
 }
-
-.body {
+/* Загальні стилі */
+body {
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -60,68 +62,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.header {
-}
-.header-nav {
-}
-.logo-link {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-txt-cl);
-  font-family: var(--secondary-font);
-}
-.logo-link.second {
-  color: var(--logo-light-cl);
-}
-.logo-color {
-  color: var(--logo-darck-cl);
-}
-.nav-list {
-}
-.nav-link {
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--primary-txt-cl);
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--pressed-txt-cl);
-}
-
-.contact {
-}
-.contact-link {
-  font-style: normal;
-  line-height: 1.5;
-  color: var(--secondary-txt-cl);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--pressed-txt-cl);
-}
-.list {
-}
-.contact-item {
-}
-/* Styles for  HERO */
-
-.hero {
-  background-color: var(--secondary-bg-cl);
-}
-.hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  color: var(--light-txt-cl);
-}
-.hero-btn {
-}
 .btn {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -133,6 +73,59 @@
   cursor: pointer;
 }
 
+/* ===== INDEX===== */
+
+/* header */
+
+.logo-link {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-txt-cl);
+  font-family: var(--secondary-font);
+}
+.logo-color {
+  color: var(--logo-darck-cl);
+}
+.logo-link.second {
+  color: var(--logo-light-cl);
+  line-height: calc(21 / 18);
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--primary-txt-cl);
+}
+
+.contact-link {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--secondary-txt-cl);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--pressed-txt-cl);
+}
+
+/*  hero */
+
+.hero {
+  background-color: var(--secondary-bg-cl);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--light-txt-cl);
+}
+
 .hero-btn {
   color: var(--light-txt-cl);
   background-color: var(--btn-cl);
@@ -141,27 +134,10 @@
 .hero-btn:focus {
   background-color: var(--pressed-bg-cl);
 }
-/* Styles for ADVANTAGS */
-
-.advantags {
-}
-.advantags-caption {
-}
-.advantags-list {
-}
-.advantags-item {
-}
-.advantags-title {
-}
-/* .advantags-disc {
-  line-height: 1.5;
-
-  color: var(--secondary-txt-cl);
-} */
+/*  ADVANTAGS */
 
 /* Styles for PRODUCT */
-.product {
-}
+
 .product-title,
 .team-title {
   font-weight: 700;
@@ -171,41 +147,34 @@
   text-align: center;
   text-transform: capitalize;
 }
-.product-list {
-}
-.list {
-}
-.product-item {
-}
 
-/* Styles for Our Team  */
+/* Our Team  */
 
 .team {
   background-color: var(--grey-light-bg-cl);
 }
 
-.team-list {
-}
 .team-item {
   background-color: var(--primary-bg-cl);
-}
-.team-img {
-}
-.team-position {
 }
 
 /* Footer */
 .footer {
   background-color: var(--secondary-bg-cl);
 }
-.logo-link {
-}
-.link {
-}
-.second {
-}
-.logo-color {
-}
+
 .footer-desc {
   color: var(--footer-txt-cl);
+}
+
+/* PORTFOLIO */
+
+.btn.filter {
+  color: var(--btn-filter-txt-cl);
+  background-color: var(--grey-light-bg-cl);
+}
+.btn.filter:hover,
+.btn.filter:focus {
+  color: var(--light-txt-cl);
+  background-color: var(--pressed-bg-cl);
 }
