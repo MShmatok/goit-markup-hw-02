@@ -19,8 +19,8 @@
   --btn-cl: #4d5ae5;
 
   /* Fonts */
-  --primary-font: Roboto;
-  --secondary-font: Raleway;
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
 }
 /* Загальні стилі */
 body {
