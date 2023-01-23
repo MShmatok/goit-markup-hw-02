@@ -7,12 +7,14 @@
   --logo-darck-cl: #4d5ae5;
   --logo-light-cl: #f4f4fd;
   --pressed-txt-cl: #404bbf;
+  --footer-txt-cl: #e7e9fc;
 
   /* Colors bg */
   --primary-bg-cl: #ffffff;
   --secondary-bg-cl: #2e2f42;
-  --grey-light-cl: #f4f4fd;
+  --grey-light-bg-cl: #f4f4fd;
   --pressed-bg-cl: #404bbf;
+  --btn-cl: #4d5ae5;
 
   /* Fonts */
   --primary-font: Roboto;
@@ -23,6 +25,7 @@
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
   font-size: 16px;
+  color: var(--primary-txt-cl);
 }
 
 .link {
@@ -30,6 +33,32 @@
 }
 .list {
   list-style: none;
+}
+
+.title-txt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.desc-txt {
+  line-height: 1.5;
+  color: var(--secondary-txt-cl);
+}
+.center-txt {
+  text-align: center;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header {
@@ -94,4 +123,89 @@
 .hero-btn {
 }
 .btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+}
+
+.hero-btn {
+  color: var(--light-txt-cl);
+  background-color: var(--btn-cl);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-bg-cl);
+}
+/* Styles for ADVANTAGS */
+
+.advantags {
+}
+.advantags-caption {
+}
+.advantags-list {
+}
+.advantags-item {
+}
+.advantags-title {
+}
+/* .advantags-disc {
+  line-height: 1.5;
+
+  color: var(--secondary-txt-cl);
+} */
+
+/* Styles for PRODUCT */
+.product {
+}
+.product-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  text-transform: capitalize;
+}
+.product-list {
+}
+.list {
+}
+.product-item {
+}
+
+/* Styles for Our Team  */
+
+.team {
+  background-color: var(--grey-light-bg-cl);
+}
+
+.team-list {
+}
+.team-item {
+  background-color: var(--primary-bg-cl);
+}
+.team-img {
+}
+.team-position {
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-bg-cl);
+}
+.logo-link {
+}
+.link {
+}
+.second {
+}
+.logo-color {
+}
+.footer-desc {
+  color: var(--footer-txt-cl);
 }
