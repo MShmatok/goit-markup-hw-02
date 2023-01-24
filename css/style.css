@@ -71,6 +71,7 @@ body {
   letter-spacing: 0.04em;
 
   cursor: pointer;
+  border: none;
 }
 
 /* ===== INDEX===== */
